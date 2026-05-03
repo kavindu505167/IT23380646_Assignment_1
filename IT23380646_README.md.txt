@@ -1,0 +1,41 @@
+# IT23380646 - IT3040 Assignment 1
+
+## Project Title
+Automated Testing for Singlish to Sinhala Transliteration System
+
+## Repository
+https://github.com/kavindu505167/IT23380646_Assignment_1.git
+
+## Project Structure
+
+IT23380646_Assignment_1/
+
+- test_automation.py        -> Playwright automation script
+- Assignment 1 - Test cases.xlsx -> Excel file with test cases & results
+- requirements.txt          -> Python dependencies
+- README.md                 -> Project documentation
+- venv/ (optional)          -> Virtual environment (not required)
+
+---
+
+## Technologies Used
+
+- Python 3.11/3.12
+- Playwright (UI Automation)
+- OpenPyXL (Excel handling)
+
+---
+
+## How to Run the Project
+
+1. **Open terminal inside project folder**
+
+2. **(Optional) Activate virtual environment**
+   `venv\Scripts\activate`
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   playwright install
+
+4.python test_automation.py --excel "C:\Users\USER\Desktop\IT23380646\IT23380646 - Test cases.xlsx" --url "https://www.pixelssuite.com/chat-translator" --wait-ms 5000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1 --keep-open
